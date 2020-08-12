@@ -12,9 +12,9 @@ public class ClientTest {
 
 	public static void main(String[] args) {
 		try(Session session=HibernateUtil.getSessionFactory().openSession()){
-			//createEmployee(session);
-			getEmployeeById(session);
-			getAddressById(session);
+			createEmployee(session);
+			//getEmployeeById(session);
+			//getAddressById(session);
 			//updateEmployeeById(session);
 			//deleteEmployeeById(session);
 		}
